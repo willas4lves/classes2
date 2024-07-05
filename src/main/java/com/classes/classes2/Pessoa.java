@@ -1,6 +1,6 @@
 package com.classes.classes2;
 
-public class Pessoa {
+public abstract class Pessoa {
 
     private static int contadorPessoa = 0;
     private int pessoaID;

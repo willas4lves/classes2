@@ -1,14 +1,14 @@
 package com.classes.classes2;
 
-public class Autor {
+public class Autor extends Pessoa {
     private static int contadorAutor = 0;
     private int autorID;
     private String nome;
 
-    public Autor(String nome, int autorID) {
-        this.nome = nome;
-        autorID = contadorAutor;
-        contadorAutor++;
+
+    public Autor(String nome, String cpf, Endereco endereco, int autorID) {
+        super(nome, cpf, endereco);
+        this.autorID = autorID;
     }
 
     public int getAutorID() {
